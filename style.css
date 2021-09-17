@@ -113,6 +113,7 @@ header{
     text-transform: uppercase;
     font-size: 10px;
     letter-spacing: 1px;
+    cursor: pointer;
     font-family:  Roboto Condensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
 }
 .sub_text p{
@@ -121,6 +122,7 @@ header{
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 1px;
+    cursor: pointer;
     font-family:  Roboto Condensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
 }
 .sub_text{
@@ -148,6 +150,7 @@ header{
 }
 .secondary_navbar_label{
     padding-bottom: 5px;
+    cursor: pointer;
     color: #999;
     text-decoration: none;
     text-transform: uppercase;
@@ -182,6 +185,7 @@ header{
 .second_nav p{
     margin-top: 11px;
     margin-bottom: 11px;
+    cursor: default;
 }
 .promo_logo img{
     width: 28px;
@@ -224,7 +228,7 @@ header{
 }
 .container .slider .slide .caption{
     position: absolute;
-    bottom: 168px;
+    bottom: 110px;
     left: 137px;
     right: 60px;
     padding: 30px;
@@ -232,6 +236,7 @@ header{
     transition: 0.5s;
 }
 .container .slider .slide .caption h2{
+    cursor: default;
     margin: 0 0 20px;
     padding: 0;
     color: #fff;
@@ -243,6 +248,7 @@ header{
 }
 .container .slider .slide .caption p{
     margin: 0;
+    cursor: default;
     padding: 0;
     color: #fff;
     font-size: 16px;
@@ -251,6 +257,9 @@ header{
     font-family: 'Roboto regular';
     letter-spacing: .5px;
     transition: 0.5s;
+}
+.shan_bu{
+    display: flex;
 }
 .container .slider .slide .caption button{
     font-size: 14px;
@@ -296,30 +305,71 @@ header{
     background-size: cover;
     background-position: center;
 }
+.container .slider .slide.slide6{
+    background: url(Resources/banner1_ff_0914_com_mas_dsk_01.jpg);
+    background-size: cover;
+    background-position: center;
+}
 @keyframes animate{
     0%{
         left:0;
     }
-    20%{
+    5%{
         left:0;
+    }
+    10%{
+        left:0;
+    }
+    15%{
+        left:0;
+    }
+    20%{
+        left:-100%;
     }
     25%{
         left:-100%;
     }
-    45%{
+    30%{
         left:-100%;
+    }
+    35%{
+        left:-100%;
+    }
+    40%{
+        left:-200%;
+    }
+    45%{
+        left:-200%;
     }
     50%{
         left:-200%;
     }
-    70%{
+    55%{
         left:-200%;
+    }
+    60%{
+        left:-300%;
+    }
+    65%{
+        left:-300%;
+    }
+    70%{
+        left:-300%;
     }
     75%{
         left:-300%;
     }
+    80%{
+        left:-400%;
+    }
+    85%{
+        left:-400%;
+    }
+    90%{
+        left:-400%;
+    }
     95%{
-        left:-300%;
+        left:-400%;
     }
     100%{
         left:-400%;
