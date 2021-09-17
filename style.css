@@ -48,6 +48,18 @@
                             font-weight: normal;
                             src: local('Roboto Condensed Light'), url('fonts/RobotoCondensed-Light.woff') format('woff');
                             }
+                            @font-face {
+                                font-family: 'Roboto Regular';
+                                font-style: normal;
+                                font-weight: normal;
+                                src: local('Roboto Regular'), url('fonts/Roboto-Regular.woff') format('woff');
+                                }
+                                @font-face {
+                                    font-family: 'Roboto Bold';
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    src: local('Roboto Bold'), url('fonts/Roboto-Bold.woff') format('woff');
+                                    }
 body{
     margin:0;
     padding: 0;
@@ -212,11 +224,10 @@ header{
 }
 .container .slider .slide .caption{
     position: absolute;
-    bottom: 60px;
-    left: 60px;
+    bottom: 168px;
+    left: 137px;
     right: 60px;
     padding: 30px;
-    background: rgba(0, 0, 0, .5);
     box-sizing: border-box;
     transition: 0.5s;
 }
@@ -224,15 +235,40 @@ header{
     margin: 0 0 20px;
     padding: 0;
     color: #fff;
-    font-size: 20px;
+    font-family: 'Roboto Condensed Bold';
+    font-size: 44px;
+    line-height: 1;
+    text-transform: uppercase;
     transition: 0.5s;
 }
 .container .slider .slide .caption p{
     margin: 0;
     padding: 0;
     color: #fff;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 0 20px;
+    font-family: 'Roboto regular';
+    letter-spacing: .5px;
     transition: 0.5s;
+}
+.container .slider .slide .caption button{
+    font-size: 14px;
+  border:none;
+  padding: 10px 20px 10px 20px;
+  color: #ffffff;
+  font-family: 'Roboto Bold', serif;
+  
+  /* Fallback */
+  background: #e62429;
+  
+  /* Cut the corner */
+  background: linear-gradient(-45deg, transparent 7px, #e62429 7px);
+  /* transition: background 2s ease; */
+}
+.container .slider .slide .caption button:hover{
+    background: linear-gradient(-45deg, transparent 7px, #db1016 7px);
+    cursor: pointer;
 }
 
 .container .slider .slide.slide1{
