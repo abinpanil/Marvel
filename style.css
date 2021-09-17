@@ -36,6 +36,18 @@
                     font-weight: normal;
                     src: local('Roboto Condensed Bold'), url('fonts/RobotoCondensed-Bold.woff') format('woff');
                     }
+                    @font-face {
+                        font-family: 'Roboto Condensed Regular';
+                        font-style: normal;
+                        font-weight: normal;
+                        src: local('Roboto Condensed Regular'), url('fonts/RobotoCondensed-Regular.woff') format('woff');
+                        }
+                        @font-face {
+                            font-family: 'Roboto Condensed Light';
+                            font-style: normal;
+                            font-weight: normal;
+                            src: local('Roboto Condensed Light'), url('fonts/RobotoCondensed-Light.woff') format('woff');
+                            }
 body{
     margin:0;
     padding: 0;
@@ -118,5 +130,38 @@ header{
     justify-content: space-evenly;
 }
 .secondary_navbar{
+    display: flex;
+    justify-content: center;
 
+}
+.secondary_navbar_label{
+    padding-bottom: 5px;
+    color: #999;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family:  Roboto Condensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
+}
+.secondary_navbar_label:hover{
+    color: #fff;
+    border-bottom: 2px solid #e62429;
+    padding-bottom: 3px;
+}
+.space_secondary{
+    padding-left: 8vh;
+}
+.second_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font: 400 16px/1 Roboto Condensed Regular;
+    color: #fff;
+    background-color: #151515;
+
+}
+.promo_logo img{
+    width: 28px;
 }
