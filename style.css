@@ -64,7 +64,7 @@ header{
     width: 100%;
     display: flex;
     flex-direction: column;
-    
+    position: fixed;
 }
 .primary_navbar{
     display: flex;
@@ -152,6 +152,9 @@ header{
 .space_secondary{
     padding-left: 8vh;
 }
+#space_second{
+    padding-left: 2vh;
+}
 .second_nav{
     display: flex;
     justify-content: center;
@@ -160,8 +163,144 @@ header{
     font: 400 16px/1 Roboto Condensed Regular;
     color: #fff;
     background-color: #151515;
+    padding-top: 99px;
+    overflow-x: hidden;
 
+}
+.second_nav p{
+    margin-top: 11px;
+    margin-bottom: 11px;
 }
 .promo_logo img{
     width: 28px;
+}
+/* .wrapping_banner{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.wrapping_banner::-webkit-scrollbar{
+    display: none;
+}
+.wrapping_banner > div > img{
+    width: 100vw;
+    height: 62vh;
+    scroll-snap-align: start;
+} */
+.container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 62vh;
+}
+.container .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    /* float: left; */
+    animation: animate 10s linear infinite;
+}
+.container .slider .slide{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+
+}
+.container .slider .slide .caption{
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    right: 60px;
+    padding: 30px;
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.container .slider .slide .caption h2{
+    margin: 0 0 20px;
+    padding: 0;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.container .slider .slide .caption p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 12px;
+    transition: 0.5s;
+}
+
+.container .slider .slide.slide1{
+    background: url(Resources/banner1_ff_0914_com_mas_dsk_01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide.slide2{
+    background: url(Resources/banner2_shangchi_lob_com_mas_dsk_05.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide.slide3{
+    background: url(Resources/banner3_whatif_0915_com_mas_dsk_01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide.slide4{
+    background: url(Resources/banner4_wastelanders_0914_com_mas_dsk_01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide.slide5{
+    background: url(Resources/banner5_muplus_0913_com_mas_dsk_01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+@keyframes animate{
+    0%{
+        left:0;
+    }
+    20%{
+        left:0;
+    }
+    25%{
+        left:-100%;
+    }
+    45%{
+        left:-100%;
+    }
+    50%{
+        left:-200%;
+    }
+    70%{
+        left:-200%;
+    }
+    75%{
+        left:-300%;
+    }
+    95%{
+        left:-300%;
+    }
+    100%{
+        left:-400%;
+    }
+}
+@media (max-width:768px){
+    .container .slider .slide .caption{
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        padding: 20px;
+    }
+    .container .slider .slide .caption h2{
+        margin: 0 0 10px;
+        font-size: 20px;
+    }
+    .container .slider .slide .caption p{
+        font-size: 12px;
+    }
 }
