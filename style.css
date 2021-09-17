@@ -209,13 +209,15 @@ header{
     overflow: hidden;
     width: 100%;
     height: 62vh;
+    background: #151515;
+    clip-path: polygon(0 0,0 100%,100% 92%,100% 0);
 }
 .container .slider{
     position: absolute;
     top: 0;
     left: 0;
     width: 500%;
-    height: 100%;
+    height: 93%;
     /* float: left; */
     animation: animate 10s linear infinite;
 }
@@ -389,4 +391,16 @@ header{
     .container .slider .slide .caption p{
         font-size: 12px;
     }
+}
+.tab_cont .tabs__container{
+    position: relative;
+    top: 17px;
+    margin: -17px 0 0;
+    padding: 0 0 17px;
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto regular';
+    letter-spacing: .5px;
 }
