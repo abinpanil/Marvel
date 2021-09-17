@@ -392,7 +392,7 @@ header{
         font-size: 12px;
     }
 }
-.tab_cont .tabs__container{
+/* .tab_cont .tabs__container{
     position: relative;
     top: 17px;
     margin: -17px 0 0;
@@ -403,4 +403,25 @@ header{
     font-weight: 400;
     font-family: 'Roboto regular';
     letter-spacing: .5px;
+} */
+.tabs{
+    margin-top: -70px;
+    position: absolute;
+    margin-left: 40vh;
+    display: flex;
+    padding-right: 100px;
+    justify-content: center;
+    /* margin-top: -100px; */
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto Bold';
+    text-transform: capitalize;
+    letter-spacing: .5px;
+}
+.space_sec{
+    padding-left: 4vh;
+}
+.tabs_cont{
+    justify-content: center;
 }
