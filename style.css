@@ -670,3 +670,12 @@ header{
     color: #151515;
     cursor: pointer;
 }
+.newcom{
+    background-image:
+    linear-gradient(70deg,
+    rgba(21, 21, 21)50%, 
+    transparent 50%), 
+    url(Resources/new_com_20210916_set_01.jpg);
+    background-size: contain;
+    background-position-x: right;
+}
