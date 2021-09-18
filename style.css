@@ -762,3 +762,33 @@ header{
     align-content: center;
     align-items: center;
 }
+footer{
+    display: flex;
+    background-color: #151515;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.footer_logo img{
+    width: 10vh;
+}
+.f_log{
+    display: flex;
+}
+footer p{
+    margin-bottom: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: Roboto Condensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
+    color: #fff;
+}
+.f_log{
+    width: 53px;
+    height: 25px;
+}
