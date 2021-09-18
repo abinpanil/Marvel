@@ -63,6 +63,7 @@
 body{
     margin:0;
     padding: 0;
+    overflow-x: hidden;
 }
 body::-webkit-scrollbar{
     display: none;
@@ -194,20 +195,6 @@ header{
 .promo_logo img{
     width: 28px;
 }
-/* .wrapping_banner{
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-}
-.wrapping_banner::-webkit-scrollbar{
-    display: none;
-}
-.wrapping_banner > div > img{
-    width: 100vw;
-    height: 62vh;
-    scroll-snap-align: start;
-} */
 .container{
     position: relative;
     overflow: hidden;
@@ -222,7 +209,6 @@ header{
     left: 0;
     width: 500%;
     height: 93%;
-    /* float: left; */
     animation: animate 10s linear infinite;
 }
 .container .slider .slide{
@@ -594,6 +580,9 @@ header{
     margin-top: 15px;
     margin-bottom: 0;
 }
+.com_white{
+    margin-bottom: 43vh;
+}
 .tabs .com h5{
     margin-top:8px ;
 }
@@ -632,4 +621,48 @@ header{
     background-color: #db1016;
     box-shadow: inset 0 0 .5px #db1016;
     border-radius: 50px;
+}
+.blank{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-left: 14vw;
+    padding-top: .5vh;
+}
+.latest{
+    max-width: 68%;
+    display: flex;
+    justify-content: flex-start;
+}
+.latest_cont{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: center;
+}
+.latest_text{
+    padding-left: 3vw;
+}
+.latest .latest_cont .latest_text h4{
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: #999;
+    font-family: Roboto Condensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.latest .latest_cont img{
+    width: 400px;
+}
+.latest .latest_cont .latest_text p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto Bold';
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    color: #151515;
+    cursor: pointer;
 }
