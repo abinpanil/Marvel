@@ -69,8 +69,8 @@ body::-webkit-scrollbar{
     display: none;
 }
 .box{
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 header{
     background-color: #202020;
@@ -101,7 +101,7 @@ header{
     box-sizing: border-box;
     border-left: 1px solid #393939;
     border-right: 1px solid #393939;
-    height: 52px;
+    height: 6.8vh;
     display: flex;
 }
 .subscribe{
@@ -302,89 +302,7 @@ header{
     background-size: cover;
     background-position: center;
 }
-@keyframes animate{
-    0%{
-        left:0;
-    }
-    5%{
-        left:0;
-    }
-    10%{
-        left:0;
-    }
-    15%{
-        left:0;
-    }
-    20%{
-        left:-100%;
-    }
-    25%{
-        left:-100%;
-    }
-    30%{
-        left:-100%;
-    }
-    35%{
-        left:-100%;
-    }
-    40%{
-        left:-200%;
-    }
-    45%{
-        left:-200%;
-    }
-    50%{
-        left:-200%;
-    }
-    55%{
-        left:-200%;
-    }
-    60%{
-        left:-300%;
-    }
-    65%{
-        left:-300%;
-    }
-    70%{
-        left:-300%;
-    }
-    75%{
-        left:-300%;
-    }
-    80%{
-        left:-400%;
-    }
-    85%{
-        left:-400%;
-    }
-    90%{
-        left:-400%;
-    }
-    95%{
-        left:-400%;
-    }
-    100%{
-        left:-400%;
-    }
-}
-@media (max-width:768px){
-    .container .slider .slide .caption{
-        bottom: 20px;
-        left: 20px;
-        right: 20px;
-        padding: 20px;
-    }
-    .container .slider .slide .caption h2{
-        margin: 0 0 10px;
-        font-size: 20px;
-    }
-    .container .slider .slide .caption p{
-        font-size: 12px;
-    }
-    .s_white{
-        margin-bottom: 0vh;
-    }
-}
+
 /* .tab_cont .tabs__container{
     position: relative;
     top: 17px;
@@ -456,6 +374,9 @@ header{
     transparent 50%), 
     url(Resources/muplus_0913_com_mas.jpg);
    background-size: 100% 100%;
+}
+.mulogo img{
+    width: 7vw;
 }
 .pic_container .cont .caption{
     position: absolute;
@@ -549,7 +470,7 @@ header{
 
 }
 .pic_container .comics .caption img{
-    width: 70vh;
+    width: 32vw;
 }
 .unlimited{
     background-image:
@@ -767,28 +688,235 @@ footer{
     background-color: #151515;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 .footer_logo img{
     width: 10vh;
-}
-.f_log{
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 footer p{
     margin-bottom: 1px;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 13px;
     letter-spacing: 1px;
     cursor: pointer;
-    font-family: Roboto Condensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
+    font-family: "Roboto Condensed Regular",Trebuchet MS,Helvetica,Arial,sans-serif;
     color: #fff;
 }
 .f_log{
+    display: flex;
+    flex-direction: row;
     width: 53px;
-    height: 25px;
+    height: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer h2{
+    margin-bottom: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    font-family: Roboto Condensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
+}
+.follow h2{
+    margin-bottom: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    font-family: Roboto Condensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
+}
+footer h4{
+    cursor: default;
+    padding: 0;
+    color: #b1adad;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Roboto regular';
+    letter-spacing: .5px;
+}
+@keyframes animate{
+    0%{
+        left:0;
+    }
+    5%{
+        left:0;
+    }
+    10%{
+        left:0;
+    }
+    15%{
+        left:0;
+    }
+    20%{
+        left:-100%;
+    }
+    25%{
+        left:-100%;
+    }
+    30%{
+        left:-100%;
+    }
+    35%{
+        left:-100%;
+    }
+    40%{
+        left:-200%;
+    }
+    45%{
+        left:-200%;
+    }
+    50%{
+        left:-200%;
+    }
+    55%{
+        left:-200%;
+    }
+    60%{
+        left:-300%;
+    }
+    65%{
+        left:-300%;
+    }
+    70%{
+        left:-300%;
+    }
+    75%{
+        left:-300%;
+    }
+    80%{
+        left:-400%;
+    }
+    85%{
+        left:-400%;
+    }
+    90%{
+        left:-400%;
+    }
+    95%{
+        left:-400%;
+    }
+    100%{
+        left:-400%;
+    }
+}
+@media (max-width:768px){
+    .container .slider .slide .caption{
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        padding: 20px;
+    }
+    .container .slider .slide .caption h2{
+        margin: 0 0 10px;
+        font-size: 20px;
+    }
+    .container .slider .slide .caption p{
+        font-size: 12px;
+    }
+    .s_white{
+        margin-bottom: 0vh;
+    }
+    .pic_container .cont .caption h2{
+        font-size: 20px;
+    }
+    .pic_black h1{
+        font-size: 20px;
+    }
+    .pic_container .cont .caption p {
+        font-size: 12px;
+    }
+    .pic_container .cont .caption button {
+        font-size: 10px;
+    }
+    header{
+        font-size: 10px
+    }
+    .second_nav p {
+        margin-top: 0px;
+        margin-bottom: 7px;
+    }
+    .second_nav{
+        font-size: 10px;
+    }
+    .promo_logo img {
+        width: 15px;
+    }
+    .box {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    .container .slider .slide .caption button {
+        font-size: 10px;
+    }
+    .tabs p {
+        font-size: 12px;
+    }
+    .latest .latest_cont .latest_text p {
+        font-size: 14px;
+    }
+    .latest .latest_cont .latest_text h4{
+        font-size: 10px
+    }
+    .tabs .tabs_cont h5{
+        font-size: 10px
+    }
+    .white_space{
+        padding-bottom: 79px;
+    }
+    .tabs .tabs_cont img {
+        width: 150px;
+    }
+    .tabs p {
+        font-size: 12px;
+    }
+    .tabs .tabs_cont h5 {
+        font-size: 12px;
+    }
+    .s_white{
+        padding-bottom: 380px;
+    }
+    .com_tag {
+        max-width: 100%;
+    }
+    .f_log img{
+        width: 45px;
+    }
+    footer h2 {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+    footer p{
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+    .footer_logo img {
+        width: 63px;
+    }
+    footer h4{
+        font-size: 9px;
+    }
+    .follow h2{
+        font-size: 10px;
+    }
+    .secondary_navbar_label{
+        font-size: 10px;
+    }
+    body{
+        overflow-x: hidden;
+    }
 }
