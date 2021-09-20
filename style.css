@@ -77,7 +77,7 @@ header{
     color: #fff;
     font-family: Roboto,Trebuchet MS,Helvetica,Arial,sans-serif;
     font-size: 12px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -98,11 +98,20 @@ header{
     
 }
 .marvel_logo{
-    box-sizing: border-box;
-    border-left: 1px solid #393939;
-    border-right: 1px solid #393939;
-    height: 6.8vh;
-    display: flex;
+    width: 133px;
+    height: 52px;
+    background-image: url(icons/Marvel\ icon.PNG);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.marvel_logo:hover{
+    width: 48px;
+    height: 51.8px;
+    background-image: url(icons/M.PNG);
+    background-size: cover;
+    background-position: center;
 }
 .subscribe{
     display: flex;
@@ -154,7 +163,7 @@ header{
 
 }
 .secondary_navbar_label{
-    padding-bottom: 5px;
+    padding-bottom: 7px;
     cursor: pointer;
     color: #999;
     text-decoration: none;
@@ -167,7 +176,7 @@ header{
 .secondary_navbar_label:hover{
     color: #fff;
     border-bottom: 2px solid #e62429;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
 }
 .space_secondary{
     padding-left: 2vw;
@@ -265,13 +274,18 @@ header{
   
   /* Cut the corner */
   background: linear-gradient(-45deg, transparent 7px, #e62429 7px);
-  /* transition: background 2s ease; */
+  transition: 2s;
 }
 .container .slider .slide .caption button:hover{
     background: linear-gradient(-45deg, transparent 7px, #db1016 7px);
     cursor: pointer;
+    
 }
-
+.pic_black button:hover{
+    background: linear-gradient(-45deg, transparent 7px, #db1016 7px);
+    cursor: pointer;
+    transition: 2s;
+}
 .container .slider .slide.slide1{
     background: url(Resources/banner1_ff_0914_com_mas_dsk_01.jpg);
     background-size: cover;
@@ -471,6 +485,7 @@ header{
 }
 .pic_container .comics .caption img{
     width: 32vw;
+    height: 13vh;
 }
 .unlimited{
     background-image:
@@ -547,8 +562,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    padding-left: 14vw;
+    width: 100vw;
     padding-top: .5vh;
 }
 .latest{
@@ -556,6 +570,8 @@ header{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    position: relative;
+    left: 14vw;
 }
 .latest_cont{
     display: flex;
@@ -578,9 +594,11 @@ header{
     line-height: 1;
     letter-spacing: 1px;
     text-transform: uppercase;
+    cursor: default;
 }
 .latest .latest_cont img{
     width: 25vw;
+    /* height: 15vhvh; */
 }
 .latest .latest_cont .latest_text p{
     font-size: 20px;
@@ -630,14 +648,16 @@ header{
 }
 .pic_black h4{
     color: #db1016;
-    cursor: default;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 3px;
     cursor: pointer;
+    transition: .5s;
     font-family: "Roboto Condensed Bold", "Trebuchet MS", Helvetica, Arial, sans-serif;
-
+}
+.pic_black h4:hover{
+    transform: scale(1.04);
 }
 .pic_black h1{
     cursor: default;
@@ -701,6 +721,10 @@ footer{
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
+    transition: 0.5s;
+}
+.footer_logo img:hover{
+transform: scale(1.03);
 }
 footer p{
     margin-bottom: 1px;
@@ -711,6 +735,10 @@ footer p{
     cursor: pointer;
     font-family: "Roboto Condensed Regular",Trebuchet MS,Helvetica,Arial,sans-serif;
     color: #fff;
+    transition: 0.3s;
+}
+footer p:hover{
+    transform: scale(1.02);
 }
 .f_log{
     display: flex;
@@ -728,7 +756,11 @@ footer h2{
     font-size: 13px;
     letter-spacing: 3px;
     cursor: pointer;
+    transition: 0.3s;
     font-family: Roboto Condensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
+}
+footer h2:hover{
+    transform: scale(1.02);
 }
 .follow h2{
     margin-bottom: 1px;
@@ -915,6 +947,9 @@ footer h4{
     }
     .secondary_navbar_label{
         font-size: 10px;
+    }
+    .latest{
+        left: 0%;
     }
     body{
         overflow-x: hidden;
